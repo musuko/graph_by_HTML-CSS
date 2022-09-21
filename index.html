@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>charts.css グラフ化フレームワーク</title>
+    <link rel="stylesheet" href="../css_reset/destyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/charts.css/dist/charts.min.css" />
+    <!-- https://coliss.com/articles/build-websites/operation/css/charts-css-for-data-visualization.html -->
+    <!-- https://chartscss.org/examples/bar/ -->
+    <!-- https://chartscss.org/examples/column/ -->
+    <!-- https://chartscss.org/examples/area/ -->
+    <!-- https://chartscss.org/examples/line/ -->
+  </head>
+  <body>
+    <div id="my-chart">
+      <ul class="charts-css legend legend-inline legend-square">
+        <li>1st year</li>
+        <li>2nd year</li>
+        <li>3rd year</li>
+        <li>4th year</li>
+        <li>5th year</li>
+      </ul>
+      <!-- ここの記述が重要 -->
+      <table class="charts-css column show-heading multiple">
+        <caption>
+          Front End Developer Salary
+        </caption>
+
+        <tbody>
+          <tr>
+            <th scope="row">Asia</th>
+            <td style="--size: calc(20 / 100)">
+              <span class="data"> $20K </span>
+            </td>
+            <td style="--size: calc(30 / 100)">
+              <span class="data"> $30K </span>
+            </td>
+            <td style="--size: calc(40 / 100)">
+              <span class="data"> $40K </span>
+            </td>
+            <td style="--size: calc(50 / 100)">
+              <span class="data"> $50K </span>
+            </td>
+            <td style="--size: calc(75 / 100)">
+              <span class="data"> $75K </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Europe</th>
+            <td style="--size: calc(40 / 100)">
+              <span class="data"> $40K </span>
+            </td>
+            <td style="--size: calc(60 / 100)">
+              <span class="data"> $60K </span>
+            </td>
+            <td style="--size: calc(75 / 100)">
+              <span class="data"> $75K </span>
+            </td>
+            <td style="--size: calc(90 / 100)">
+              <span class="data"> $90K </span>
+            </td>
+            <td style="--size: calc(100 / 100)">
+              <span class="data"> $100K </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
